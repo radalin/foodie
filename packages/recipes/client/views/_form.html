@@ -1,0 +1,38 @@
+<template name="recipes_form">
+    <form id="recipes_form"> 
+        <div class="form-group {{#if error 'title'}}has-error{{/if}}">
+<label for="title" class="control-label">Title *</label>
+<input type="text" id="title" value="{{title}}" placeholder="Title" class="form-control">
+<span class="help-block">{{error "title"}}</span>
+</div>
+<div class="form-group {{#if error 'desc'}}has-error{{/if}}">
+<label for="desc" class="control-label">Description *</label>
+<input type="text" id="desc" value="{{desc}}" placeholder="Description" class="form-control">
+<span class="help-block">{{error "desc"}}</span>
+</div>
+<div class="form-group {{#if error 'preparation'}}has-error{{/if}}">
+<label for="preparation" class="control-label">Preparation *</label>
+<input type="text" id="preparation" value="{{preparation}}" placeholder="Preparation" class="form-control">
+<span class="help-block">{{error "preparation"}}</span>
+</div>
+<div class="form-group {{#if error 'up_votes_count'}}has-error{{/if}}">
+<label for="up_votes_count" class="control-label">Upvotes </label>
+<input type="number" id="up_votes_count" value="{{up_votes_count}}" placeholder="Upvotes" class="form-control">
+<span class="help-block">{{error "up_votes_count"}}</span>
+</div>
+<div class="form-group {{#if error 'created_at'}}has-error{{/if}}">
+<label for="created_at" class="control-label">Created </label>
+<input type="text" id="created_at" value="{{moFormat created_at "L"}}" placeholder="Created" class="form-control">
+<span class="help-block">{{error "created_at"}}</span>
+</div>
+<div class="form-group {{#if error 'updated_at'}}has-error{{/if}}">
+<label for="updated_at" class="control-label">Last Updated </label>
+<input type="text" id="updated_at" value="{{moFormat updated_at "L"}}" placeholder="Last Updated" class="form-control">
+<span class="help-block">{{error "updated_at"}}</span>
+</div>
+
+        <button id="btnSave" type="submit" class="btn btn-success">{{_ "submit"}}</button>
+        <a href="{{pathFor 'recipesIndex'}}" class="btn btn-default">{{_ "back"}}</a>
+    </form>
+</template>
+

@@ -1,0 +1,34 @@
+{
+  "home":"Home",
+  "recipes":"Recipes",
+  "update_success":"Recipes updated successfully",
+  "search_hint":"Search key",
+  "no_data_found":"No Data Found",
+  "load_more":"Load More",
+
+  "confirm_remove":"Are you sure you want to delete this record?",
+  "confirm_remove_plural":"Are you sure you want to delete these __count__ records?",
+
+  "no_selection":"Select at least one row for deletion",
+    
+  "index":"Recipes Index",
+  "insert_recipes":"Insert Recipes",
+  "update_recipes":"Update Recipes",
+  "view":"View",
+  "submit":"Submit",
+  "view_recipes":"View Recipes",
+  "back":"Back",
+  "update":"Update",
+  "remove":"Delete",
+  "remove_selection":"Remove selected recipes",
+  "remove_success":"Recipes removed successfully",
+  "actions":"Actions",
+  "insert":"Insert",
+  "insert_success":"Recipes added successfully",
+  "title":"title",
+  "created_at":"Created At",
+  "created_by":"Created By",
+  "updated_at":"Dpdated At",
+  "updated_by":"Updated By"
+}
+
